@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Halfway HCI Report</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Halfway HCI Report</h1>
+</header>
+<h1 id="σελίδα-τελικής-αναφοράς">Σελίδα τελικής αναφοράς</h1>
+<p>Βασίλης Τσουκάλης ΑΜ:2019130</p>
+<h2 id="πίνακας-περιεχομένων">Πίνακας περιεχομένων</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Εβδομάδα</th>
+<th>Παραδοτέα</th>
+<th>Σύνδεσμος στην <a
+href="https://github.com/courses-ionio/help/discussions/categories/show-and-tell">εβδομαδιαία
+παρουσίαση προόδου στις συζητήσεις</a></th>
+<th>Αυτοαξιολόγηση σύμφωνα με τα κριτήρια της αντίστοιχης άσκησης</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><a
+href="https://github.com/courses-ionio/hci/discussions/1794">Δημιουργία
+ομάδας</a> + <a href="https://courses-ionio.github.io/help/guide/">Φορκ
+και δημιουργία σελίδας τελικής αναφοράς</a>, <a
+href="https://raw.githubusercontent.com/courses-ionio/hci/master/README.md">προσθήκη
+πίνακα περιεχομένων</a>, <a
+href="https://courses-ionio.github.io/help/intro/">συγγραφή της
+εισαγωγής</a>, αποστολή της εισαγωγής <a
+href="https://github.com/courses-ionio/help/discussions/categories/show-and-tell">για
+σχολιασμό στην συζήτηση</a> και καταγραφή του συνδέσμου συζήτησης δίπλα
+–&gt;</td>
+<td><a href="https://github.com/courses-ionio/help/discussions/855">link
+στις συζητήσεις</a></td>
+<td>Ολοκληρώθηκε εντός προθεσμίας. Χρίζει βελτίωσης.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><a href="#Arch-install">Άσκηση γραμμής εντολών (linux
+install)</a></td>
+<td><a
+href="https://github.com/courses-ionio/help/discussions/1035">link στις
+συζητήσεις</a></td>
+<td>Ολοκληρώθηκε πλήρως εντός προθεσμίας.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><a href="#Συμμετοχικό-περιεχόμενο-A1">Συμμετοχικό περιεχόμενο
+A1</a></td>
+<td><a
+href="https://github.com/courses-ionio/help/discussions/1188">link στις
+συζητήσεις</a></td>
+<td>Ολοκληρώθηκε πλήρως εντός προθεσμίας.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><a href="#Άσκηση-γραμμής-εντολών-warm-up">Άσκηση γραμμής εντολών
+(warm up cli)</a></td>
+<td><a
+href="https://github.com/courses-ionio/help/discussions/1327">link στις
+συζητήσεις</a></td>
+<td>Ολοκληρώθηκε πλήρως εντός προθεσμίας. + shell script</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><a href="#Συμμετοχικό-περιεχόμενο-A2">Συμμετοχικό περιεχόμενο
+A2</a></td>
+<td><a
+href="https://github.com/courses-ionio/help/discussions/1452">link στις
+συζητήσεις</a></td>
+<td>Ολοκληρώθηκε πλήρως εντός προθεσμίας.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><a href="#Κατασκευή-του-βιβλίου-Α">Κατασκευή του βιβλίου Α</a></td>
+<td><a
+href="https://github.com/courses-ionio/help/discussions/1596">link στις
+συζητήσεις</a></td>
+<td>Ολοκληρώθηκε πλήρως εντός προθεσμίας.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><a href="#Συμμετοχικό-περιεχόμενο-B1">Συμμετοχικό περιεχόμενο
+B1</a></td>
+<td><a
+href="https://github.com/courses-ionio/help/discussions/1664">link στις
+συζητήσεις</a></td>
+<td>Ολοκληρώθηκε πλήρως εντός προθεσμίας.</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Άσκηση γραμμής εντολών</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Συμμετοχικό περιεχόμενο B2</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Άσκηση γραμμής εντολών</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Κατασκευή του βιβλίου Β</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Τελική αναφορά*</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="εισαγωγή">Εισαγωγή</h2>
+<p>Μέσω της εμπειρίας στο παρακάτω μάθημα επιδιώκω την εξοικείωση με μια
+ομάδα ετερόκλητων ανθρώπων με στόχο την επίτευξη ενός κοινού σκοπού.
+Παράλληλα, επιδιώκω την κατανόηση του τρόπου λειτουργίας του github,
+μιας και ολοένα και περισσότερο επιστήμονες ή εργαζόμενοι στο χώρο της
+πληροφορικής το αξιοποιούν ως μέσο ανταλλαγής απόψεων, γνώσεων,
+ερωτήσεων και κώδικα. Οι ασκήσεις τερματικού προσφέρουν την δυνατότητα
+να κάνω κτήμα μου τον τρόπο λειτουργίας του τερματικού. Σκοπεύω να
+αξιοποιήσω αυτή την ευκαιρία θέτοντας ως στόχο την βελτιστοποίηση των
+γνώσεων μου γύρω από το τερματικό αλλά και τα linux γενικότερα. Με την
+υλοποίηση των παραπάνω στόχων θεωρώ πως θα έχω έχω εκπληρώσει τις
+βλέψεις μου γύρω από το μάθημα της επικοινωνίας ανθρώπου υπολογιστή.</p>
+<h2 id="arch-install">Arch install</h2>
+<p>Το installation του Arch ήταν η πρώτη πρόκληση σε αυτό το μάθημα
+καθώς δεν είχα κάνει ποτέ εγκατάσταση linux χωρίς GUI. Το πρώτο πρόβλημα
+που αντιμετώπισα ήταν το partitioning του δίσκου καθώς είχα ήδη
+partition στον δίσκο με άλλα αρχεία, συρρίκνωσα το partition και μετά
+από λίγο πειραματισμό με το fdisk κατάφερα να ετοιμάσω τα απαραίτητα για
+την εγκατάσταση partitions. Το επόμενο speed bump ήρθε στο τέλος που
+πρέπει να εγκατασταθεί το boot loader. Η πολλές επιλογές με φοβίσαν στην
+αρχή εφόσον δεν ξέρω της διάφορες μεταξύ τους. Εφόσον τα περισσότερα
+distros (τουλάχιστον αυτά που γνωρίζω) έρχονται με GRUB αυτό επέλεξα και
+εγώ και με βοήθεια το αντίστοιχο Arch wiki κατάφερα να τελειώσω την
+εγκατάσταση. Επόμενο βήμα ήταν να εγκαταστήσω το kde desktop enviroment
+και η επεξεργασία του .bashrc για να αλλάξω το command prompt σύμφωνα με
+της οδηγίες. Από κάτω ακολουθούν δυο asciinema με το boot log και το
+neofetch που δείχνει τα specs του συστήματος.</p>
+<h3 id="neofetch">neofetch</h3>
+<p><a href="https://asciinema.org/a/527419"><img
+src="https://asciinema.org/a/527419.png" alt="asciicast" /></a></p>
+<h3 id="bootlog">bootlog</h3>
+<p><a href="https://asciinema.org/a/528071"><img
+src="https://asciinema.org/a/528071.png" alt="asciicast" /></a></p>
+<h2 id="συμμετοχικό-περιεχόμενο-a1">Συμμετοχικό περιεχόμενο A1</h2>
+<p>Για την τρίτη εβδομάδα κληθήκαμε να σετάρουμε το <a
+href="https://invicta-team-project.netlify.app/">site</a> της ομάδας και
+να κάνουμε τις δικές μας προσθήκες σε αυτό. Ως συντονιστής της ομάδας
+χρησιμοποίησα το netlify βάση των οδηγιών προκειμένου να κάνω deploy το
+site της ομάδας. Στη συνέχεια έκανα config και deploy το προσωπικό μου
+site προκειμένου να δω της προσθήκες και να βεβαιωθώ πως λειτουργούν
+σωστά πριν της ενσωματώσω στο site της ομάδας. Η προσθήκες που έκανα στο
+site είναι το <a
+href="https://invicta-team-project.netlify.app/gallery/virtuality-1000cs/">virtuality
+1000cs</a> και το <a
+href="https://invicta-team-project.netlify.app/gallery/computer-aided-manufacturing/">CAM</a>
+τις οποίες εφόσον τις δοκίμασα στο προαναφερθέν δικό μου deployment τις
+ενσωμάτωσα στο site της ομάδας. Μια άλλη αρμοδιότητα ως συντονιστής της
+ομάδας ήταν ο έλεγχος και η ενσωμάτωση των pull-request από τις
+προσθήκες των υπολοίπων μελών στο site.</p>
+<h3 id="pull-requests">Pull requests</h3>
+<ol type="1">
+<li><a
+href="https://github.com/Invicta-Ionian-Hci/images/pull/1">images</a></li>
+<li><a
+href="https://github.com/Invicta-Ionian-Hci/_gallery/pull/1">gallery</a></li>
+</ol>
+<h2 id="άσκηση-γραμμής-εντολών-warm-up">Άσκηση γραμμής εντολών warm
+up</h2>
+<p>Για την τέταρτη εβδομάδα διάλεξα της ασκήσεις track your time with a
+simple journal,fetch information και check the weather. Πρώτα ξεκίνησα
+με την εγκατάσταση του jrnl. Βάση τον οδηγιών στο <a
+href="https://jrnl.sh/en/stable/installation/#installation">site</a>
+πρέπει να εγκατασταθεί με την χρίση του pipx το οποίο πρέπει να
+εγκατασταθεί μέσο pip. Πρώτη μου ενέργεια ήταν να βεβαιωθώ ότι έχω την
+python εγκαταστημένη με την εντολή <code>python --version</code> και
+μετά συνέχισα στην εγκατάσταση του pip με την εντολή
+<code>python -m ensurepip --upgrade</code> από το <a
+href="https://pip.pypa.io/en/stable/installation/">documentation</a> του
+pip και την εντολή <code>python3 -m pip install --user pipx</code> για
+την εγκατάσταση του pipx από το <a
+href="https://pypa.github.io/pipx/installation/">website</a>. Το
+προκαθορισμένο directory που εγκαθιστάτε το pipx είναι το
+<code>home/&lt;ονομα χρηστη&gt;/.local/bin</code> για να μπορεί να
+τρέχει από οπουδήποτε χωρίς να χρειάζεται να δίνετε το directory που
+βρίσκετε έβαλα την γραμμή
+<code>export PATH=$PATH:/home/vasilis/.local/bin</code> στο τέλος του
+.bashrc για να προσθέτει το directory στην μεταβλητή $PATH κάθε φορά που
+ανοίγω το terminal emulator. Τέλος βάση τον <a
+href="https://jrnl.sh/en/stable/installation/#installation">οδιγιων</a>
+για την εγκατάσταση του jrnl έτρεξα την εντολή
+<code>pipx install jrnl</code>. Οι υπόλοιπες ασκήσεις είναι υπηρεσίες
+που μπορούμε να έχουμε πρόσβαση μέσο του τερματικού οπότε δεν
+χρειαζότανε κάποια εγκατάσταση. Για να ενόσω όλες της ασκήσεις μαζί
+έκανα ένα script που βάση μενού θα επιλέγω την ενέργεια που θέλω να κάνω
+Το script δεν έχει όλες της λειτουργιές ούτε του jrnl ούτε τον υπηρεσιών
+καθώς είναι πάρα πολλές άλλα μονό της βασικές. Π.χ για το jrnl επιτρέπει
+την εισχώρηση καινούργιας έγγραφης, την αναζήτηση συγκεκριμένης έγγραφης
+βάση ημερομηνίας και την εμφάνιση όλου του ημερολόγιου. Για τη
+δημιουργία του script με βοήθησε το <a href="https://askubuntu.com/">ask
+ubuntu</a> με κάποια προβλήματα που αντιμετώπισα και με trial and error
+τα κατάφερα. Το αρχείο του script αποθηκευτικέ στο
+<code>/home/vasilis/.local/bin</code> για να μπορώ να το εκτελέσω από
+οπού θέλω.</p>
+<h3 id="script-τέταρτου-παραδοτέου">script τέταρτου παραδοτέου</h3>
+<p><a href="https://asciinema.org/a/532984"><img
+src="https://asciinema.org/a/532984.png" alt="asciicast" /></a></p>
+<h2 id="συμμετοχικό-περιεχόμενο-a2">Συμμετοχικό περιεχόμενο A2</h2>
+<p>Για την πέμπτη εβδομάδα έπρεπε να δημιουργήσουμε μια συλλογή
+διαφανειών και ένα χρονολόγιο για τις προσθήκες που είχαμε κάνει την <a
+href="#Συμμετοχικό-περιεχόμενο-A1">τρίτη εβδομάδα</a>, η να της
+προσθέσουμε σε ήδη υπάρχοντα χρονολόγια και διαφάνειες. Εφόσον
+παρατήρησα ότι υπήρχε πλήθος από περιεχόμενο σχετικό με την εικονική
+πραγματικότητα, άλλα μονό <a
+href="https://invicta-team-project.netlify.app/timeline/virtual-reality/">χρονολόγιο</a>
+για αυτό δημιούργησα μια καινούργια <a
+href="https://invicta-team-project.netlify.app/slides/virtual-reality-devices/">συλλογή
+διαφανειών</a> που συμπεριλαμβάνει την προσθήκη μου. Το <a
+href="https://invicta-team-project.netlify.app/timeline/techandwork/">χρονολόγιο</a>
+που δημιούργησα για την δεύτερη προσθήκη μου , είναι αφιερωμένο σε
+πρωτοποριακά συστήματα και διεπαφές οι οποίες ενσωματώθηκαν στον
+εργασιακό χώρο διαφόρων επαγγελμάτων και άλλαξαν την φύση τους
+καθοριστικά. Το μονό πρόβλημα που αντιμετώπισα σε αυτό το παραδοτέο ήταν
+με το χρονολόγιο. Συγκεκριμένα για να εμφανιστεί μια προσθήκη πρέπει να
+εισαχθεί το όνομα της εικόνας στο markdown αρχείο του χρονολόγιου και
+όχι το όνομα του markdown αρχείου στο gallery. Με λίγο trial and error
+εξακρίβωσα το λάθος και το χρονολόγιο μου εμφανιζόταν κανονικά.</p>
+<h2 id="κατασκευή-του-βιβλίου-α">Κατασκευή του βιβλίου Α</h2>
+<p>Για αυτό το παραδοτέο έπρεπε να κάνουμε fork και clone το <a
+href="https://github.com/mibook/kallipos">αποθετήριο του βιβλίου</a> στο
+μηχάνημα μας και να κατασκευάσομε το βιβλίο σε μορφή pf Έπειτα να
+δημιουργήσουμε το κατάλληλο lua filter για να προσθέσουμε τον δικό μας
+σχολιασμό στα επιμέρους κεφάλαια του βιβλίου. Για την κατασκευή του
+βιβλίου χρειαστήκαν τα εργαλεία pandoc, texlive και pandoc-fignos. To
+pandoc και το texlive μπορούν να εγκατασταθούν είτε από το binary που
+παρέχετε από το website τους, είτε με τη χρήση του package manager του
+distribution που τρέχεις άμα υπάρχει στο repository του. Το
+pandoc-fignos είναι ένα φίλτρο για την αρίθμηση εικόνων όταν
+μετατρέπουμε αρχεία από markdown σε άλλα formats και μπορούμε να το
+εγκαταστήσουμε με την χρήση του pip που είδαμε στην <a
+href="#Άσκηση-γραμμής-εντολών-warm-up">τέταρτη εβδομάδα</a>. Βάση της
+σελίδας στο <a
+href="https://github.com/tomduck/pandoc-fignos#installation">github</a>
+πρέπει να τρέξουμε την εντολή
+<code>pip install pandoc-fignos --user</code>. Για την κατανόηση του
+script και ολοκλήρωση του script για την δημιουργία του pdf μου φάνηκε
+πολύ χρήσιμο το <a href="https://pandoc.org/MANUAL.html">users
+guide</a>, τα <a href="https://pandoc.org/demos.html">demos</a> του
+pandoc, το <a
+href="https://www.latex-project.org/help/documentation/">latex
+documentation</a> και βεβαία οπός πάντα Καπίο trial and error για να
+εξοικειωθώ και να το δω στην πράξη Για το φίλτρο βασίστηκα στα ήδη
+υπάρχοντα και έκανα κάποιες μετατροπές και πρόσθεσα τα αρχεία που
+περιέχουν τον σχολιασμό στο repo. <del>Ο τρόπος εισαγωγής τον σχολιασμών
+θέλει μια βελτίωση που ελπίζω θα την έχω τελειώσει σε κάποιες
+ήμερες.</del> Για την μετατροπή του βιβλίου από latex σε pdf άλλαξα από
+την χρήση του Pandoc με xelatex, στην χρήση του xelatex αμιγώς. Καθώς με
+την χρήση του pandoc δεν λαμβανόταν υπόψη η παραμετροποίηση στο latex
+αρχείο Έτσι μείωσα τον αριθμό τον shell scripts σε δυο και ταυτόχρονα
+βελτίωσα την τελική όψη του pdf. Η παραμετροποίηση του pdf εισάγετε
+απευθείας στο latex αρχείο.</p>
+<h3 id="links">links</h3>
+<ol type="1">
+<li><a
+href="https://github.com/vasilis22/kallipos/issues/1">βιβλίο</a><br />
+</li>
+<li><a href="https://github.com/vasilis22/kallipos/issues/2">βιβλίο με
+σχολιασμό</a><br />
+</li>
+<li><a
+href="https://github.com/vasilis22/kallipos/blob/commentation/comenting.lua">lua
+filter</a><br />
+</li>
+<li><a href="https://github.com/vasilis22/kallipos">αποθετήριο</a></li>
+</ol>
+<h2 id="συμμετοχικό-περιεχόμενο-b1">Συμμετοχικό περιεχόμενο B1</h2>
+<p>Για το έβδομο παραδοτέο αποφάσισα να κάνω μια μελέτη περίπτωσης για
+τα συστήματα εικονικής πραγματικότητας. Δεν εστίασα στην χρήση του ως
+επιχειρησιακό εργαλείο καθώς τα συστήματα αυτά είναι πολύ πιο
+ανεπτυγμένα άλλα δεν είναι δυνατή η πρόσβαση τους στο εύρη κοινό Για την
+παράδοση του δημιούργησα δυο καινούργια markdown αρχεία, το <a
+href="https://github.com/Invicta-Ionian-Hci/site/blob/master/_includes/cs-vrtech.md">cs-vrtech.md</a>
+και το <a
+href="https://github.com/Invicta-Ionian-Hci/site/blob/master/_case-study/vrtech.md">vrtech.md</a>.
+Κλασικά εφόσον βεβαιώθηκα ότι δουλεύουν όπως αναμένετε σε ένα
+διαφορετικό deployment του site έκανα το απαραίτητο <a
+href="https://github.com/Invicta-Ionian-Hci/site/pull/6">pull
+request</a> στο αποθετήριο της ομάδας.</p>
+</body>
+</html>
